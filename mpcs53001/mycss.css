@@ -1,0 +1,31 @@
+.bgimg {
+    background-image: url('index.png');
+    width: 100%; 
+    height: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+
+}
+p {
+	color: white;
+}
+
+/*
+
+Two labels:
+
+Built-in:
+<p>
+<div>
+
+*/
+
+/* For every div*/
+div{
+	font-size: 50px;
+}
+
+/* For div that's class div-red*/
+.div-red {
+	background-color: red
+}

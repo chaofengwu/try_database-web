@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>MPCS 53001: UChicago Course System</title>
+</head>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<body>
+<h1>MPCS 53001: UChicago Course System -- User Page</h1>
+
+
+
+<font size="3"><a href="http://mpcs53001.cs.uchicago.edu/~chaofeng/README_QUERY.txt">Need help?</a></font>
+<br>
+
+
+ <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <font size="3">1. List all tables and attributes in the database.</font>
+<p>
+<a href="1.php">List your tables and attributes!</a>
+<hr>
+    </div>
+    <div class="w3-quarter">
+     <font size="3">2. Search Student or Faculty by name and type(Student/Faculty).</font>
+<p>
+<center>
+	<form method=get action="2.php">
+name:(suggestion: [Alfred Martin, Faculty], [Hadwin Robertson, Student])<br>
+<input type="text" name="name" size = "15"><BR>
+Choose type:
+<select name = "type">
+	<option value = "Student">Student</option>
+	<option value="Faculty">Faculty</option>
+</select><br>
+<input type="submit" value="Submit">
+</form>
+</center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">3. Show all attributes by given an ID, regardless of Student or Faculty.</font>
+<p>
+<center><form method=get action="3.php">
+ID:(suggestion: 6842231, 52708618, 1234567)<br>
+<input type="text" name="IDnum" size = "15"><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">4. Show all students who are advised by the faculty with given ID.</font>
+<p>
+<center><form method=get action="4.php">
+ID:(suggestion: 6838846, 5995471, 1234567)<br>
+<input type="text" name="IDnum" size = "15"><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+  </div>
+
+<hr>
+<!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <font size="3">5. Show all courses that more than n students take.</font>
+<p>
+<center><form method=get action="5.php">
+ID:(suggestion: 2000, 2800, 3000)<br>
+<input type="text" name="num" size = "15"><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">6. Show the courses and grades of the student with the given an ID.</font>
+<p>
+<center><form method=get action="6.php">
+ID:(suggestion: 72814447, 29859323)<br>
+<input type="text" name="IDnum" size = "15"><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">7.Show faculty who advise at least n students.</font>
+<p>
+<center><form method=get action="7.php">
+ID:(suggestion: 8, 10)<br>
+<input type="text" name="num" size = "15"><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">8. Show students who take at least n courses and get grade in each courses not lower than g.</font>
+<p>
+<center><form method=get action="8.php">
+number of courses:(suggestion: [3, 80], [2, 95])<br>
+<input type="text" name="num" size = "15"><BR>
+grade lower bound:<br>
+<input type="text" name="grade" size = "15"><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+  </div>
+<hr>
+
+
+
+<!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <font size="3">9. Show course with average grade not lower than g.</font>
+<p>
+<center><form method=get action="9.php">
+grade lower bound:(suggestion: 60, 70)<br>
+<input type="text" name="grade" size = "15"><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

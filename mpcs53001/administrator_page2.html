@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>MPCS 53001: UChicago Course System</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<h1>MPCS 53001: UChicago Course System -- Admin Page2</h1>
+
+<font size="5"><center><a href="http://mpcs53001.cs.uchicago.edu/~chaofeng/administrator_page.html">Go to admin page1 for query.</a></center></font><br>
+
+<font size="3"><a href="http://mpcs53001.cs.uchicago.edu/~chaofeng/README_MODIFICATION.txt">Need help?</a></font>
+<br>
+
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <font size="3">10. Input username, password, and validation to become administrator.</font>
+<p>
+	<center>
+<form method=get action="10.php">
+	Username: <input type="text" name="nam" maxlength='50' size = "15"><br>
+	password: <input type="text" name="pw" maxlength='50' size = "15"><br>
+	Validation: <input type="text" name="validation" size = "15"><br>
+	<input type="submit" name="Submit" value="Submit"><br>
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">11. Add student.</font>
+<p>
+	<center>
+<form method=get action="11.php">
+Name: <center><input type="text" name="name" size = "15"></center><br>
+ID: (suggestion: 87654321)<center><input type="text" name="ID" size = "15"></center><BR>
+Department: <center><input type="text" name="department" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">12. Add student to a course.</font>
+<p>
+	<center>
+<form method=get action="12.php">
+StudentID: <center><input type="text" name="StudentID" size = "15"></center><BR>
+CourseNumbering: (suggestion: CMSC 33100-1)<center><input type="text" name="coursenumbering" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">13. Update grade of a student in course.</font>
+<p>
+	<center>
+<form method=get action="13.php">
+StudentID: <center><input type="text" name="StudentID" size = "15"></center><BR>
+CourseNumbering: <center><input type="text" name="coursenumbering" size = "15"></center><BR>
+Grade: <center><input type="text" name="grade" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+  </div>
+
+<hr>
+
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <font size="3">14. Drop a course for student.</font>
+<p>
+	<center>
+<form method=get action="14.php">
+StudentID: <center><input type="text" name="StudentID" size = "15"></center><BR>
+CourseNumbering: <center><input type="text" name="coursenumbering" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">15. Assign advisor for student.</font>
+<p>
+	<center>
+<form method=get action="15.php">
+StudentID: <center><input type="text" name="StudentID" size = "15"></center><BR>
+AdvisorID: (1000784)<center><input type="text" name="AdvisorID" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">16. Update advisor for student.</font>
+<p>
+	<center>
+<form method=get action="16.php">
+StudentID: <center><input type="text" name="StudentID" size = "15"></center><BR>
+AdvisorID: (1001428)<center><input type="text" name="AdvisorID" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">17. Delete advisor for student.</font>
+<p>
+	<center>
+<form method=get action="17.php">
+StudentID: <center><input type="text" name="StudentID" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+  </div>
+<hr>
+
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <font size="3">18. Delete student.</font>
+<p>
+	<center>
+<form method=get action="18.php">
+StudentID: <center><input type="text" name="StudentID" size = "15"></center><BR>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+    <div class="w3-quarter">
+      <font size="3">19. Show history.</font>
+<p>
+<center>
+<form method=get action="19.php">
+<b>Choose Table:</b><br>
+<select name = "type">
+	<option value = "history_student">Student</option>
+	<option value="history_take">Take</option>
+	<option value="history_advisor">Advisor</option>
+</select><br>
+<input type="submit" value="Submit">
+</form></center>
+<hr>
+    </div>
+  </div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

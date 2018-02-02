@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>MPCS 53001: UChicago Course System</title>
+</head>
+
+<body>
+<h1>MPCS 53001: UChicago Course System</h1>
+
+<font size="3">1. A link to a php script (<tt>1.php</tt>) that list all tables and attributes in
+the database.</font>
+<p>
+<a href="1.php">List your tables and attributes!</a>
+<hr>
+
+<font size="3">2. Search Student or Faculty by name and type(Student/Faculty). The script that runs when you press the <it>Submit</it> button is <tt>2.php</tt>.</font>
+<p>
+<form method=get action="2.php">
+<b>Enter name:</b>(suggestion: [Alfred Martin, Faculty], [Hadwin Robertson, Student])<br>
+<input type="text" name="name"><BR>
+<b>Choose type:</b><br>
+<select name = "type">
+	<option value = "Student">Student</option>
+	<option value="Faculty">Faculty</option>
+</select><br>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<font size="3">3. Show all attributes by given an ID, regardless of Student or Faculty. The script that runs when you press the <it>Submit</it> button is <tt>3.php</tt>.</font>
+<p>
+<form method=get action="3.php">
+<b>Enter ID:</b>(suggestion: 6842231, 52708618, 1234567)<br>
+<input type="text" name="IDnum"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<font size="3">4. Show all students who are advised by the faculty with given ID. The script that runs when you press the <it>Submit</it> button is <tt>4.php</tt>.</font>
+<p>
+<form method=get action="4.php">
+<b>Enter ID:</b>(suggestion: 6838846, 5995471, 1234567)<br>
+<input type="text" name="IDnum"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<font size="3">5. AShow all courses that more than n students take. The script that runs when you press the <it>Submit</it> button is <tt>5.php</tt>.</font>
+<p>
+<form method=get action="5.php">
+<b>Enter ID:</b>(suggestion: 2000, 2800, 3000)<br>
+<input type="text" name="num"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<font size="3">6. Show the courses and grades of the student with the given an ID. The script that runs when you press the <it>Submit</it> button is <tt>6.php</tt>.</font>
+<p>
+<form method=get action="6.php">
+<b>Enter ID:</b>(suggestion: 72814447, 29859323)<br>
+<input type="text" name="IDnum"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<font size="3">7.Show faculty who advise at least n students. The script that runs when you press the <it>Submit</it> button is <tt>7.php</tt>.</font>
+<p>
+<form method=get action="7.php">
+<b>Enter ID:</b>(suggestion: 8, 10)<br>
+<input type="text" name="num"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<font size="3">8. Show students who take at least n courses and get grade in each courses not lower than g. The script that runs when you press the <it>Submit</it> button is <tt>8.php</tt>.</font>
+<p>
+<form method=get action="8.php">
+<b>Enter number of courses:</b>(suggestion: [3, 80], [2, 95])<br>
+<input type="text" name="num"><BR>
+<b>Enter grade lower bound:</b><br>
+<input type="text" name="grade"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+
+<font size="3">9. Show course with average grade not lower than g. The script that runs when you press the <it>Submit</it> button is <tt>9.php</tt>.</font>
+<p>
+<form method=get action="9.php">
+<b>Enter grade lower bound:</b>(suggestion: 60, 70)<br>
+<input type="text" name="grade"><BR>
+<input type="submit" value="Submit">
+</form>
+<hr>
+</body>
+</html>
